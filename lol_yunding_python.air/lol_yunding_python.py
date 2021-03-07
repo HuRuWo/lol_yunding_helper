@@ -5,10 +5,7 @@ import logging
 
 
 from airtest.core.api import *
-from airtest.cli.parser import cli_setup
 
-if not cli_setup():
-    auto_setup(__file__, logdir=True, devices=["Windows:///",])
 
 logger = logging.getLogger("airtest")
 logger.setLevel(logging.ERROR)
