@@ -64,15 +64,13 @@ def find_pic_play(pic_path, tag, sleep=3, duration=0.1):
     try:
         buttonx, buttony = find_pic(pic_path, tag)
         if buttonx and buttony:
-            pyautogui.click(buttonx, buttony, duration = duration)
+            pyautogui.click(buttonx, buttony, duration=duration)
             pyautogui.sleep(sleep)
             return True
     except Exception as e:
         # print(traceback.print_exc())
         print(str(e))
         return False
-
-
 
 
 def find_pic_move_to(pic_path, tag, sleep=3):
@@ -88,9 +86,24 @@ def find_pic_move_to(pic_path, tag, sleep=3):
         return False
 
 
+def find_click_pick_lol(pic_path, tag):
+    try:
+        x, y = find_pic(pic_path, tag)
+        if x and y:
+            pyautogui.moveTo(x, y)
+            pyautogui.mouseDown()
+            pyautogui.mouseUp()
+            return True
+        return False
+    except Exception as e:
+        print(str(e))
+        return False
+
+
 def open_lol_game():
     find_pic_play('pic/再玩一次.png', '再玩一次')
     find_pic_play('pic/首页play.png', '首页play')
+    find_pic_play('pic/玩家对战.png', '玩家对战')
     find_pic_play('pic/选择云顶游戏模式.png', '点开进入云顶模式')
     find_pic_play('pic/确认创建对局.png', '创建对局')
     find_pic_move_to('pic/移动鼠标_更改模式.png', '移动鼠标到其他位置')
@@ -102,10 +115,10 @@ def open_lol_game():
 
 def play_game_ing():
     while True:
-        find_pic_play('pic/1费卡.png', '1费卡', 0.01)
-        find_pic_play('pic/2费卡.png', '2费卡', 0.01)
-        find_pic_play('pic/3费卡.png', '3费卡', 0.01)
-        if find_pic_play('pic/游戏结束退出.png', '游戏退出',0.1):
+        find_click_pick_lol('pic/1费卡.png', '1费卡')
+        find_click_pick_lol('pic/2费卡.png', '2费卡')
+        find_click_pick_lol('pic/3费卡.png', '3费卡')
+        if find_click_pick_lol('pic/游戏结束退出.png', '游戏退出'):
             print('游戏结束')
             break
         time.sleep(3)
@@ -113,6 +126,7 @@ def play_game_ing():
 
 if __name__ == '__main__':
     time.sleep(5)
+
 
     while True:
         state = game_state()
