@@ -17,3 +17,5 @@ pip pyautogui
 python main.py 
 
 即可开始运行
+
+[2021lol云顶助手刷代币小蜜蜂v2版本免airtest](https://www.huruwo.top/2021lol%e4%ba%91%e9%a1%b6%e5%8a%a9%e6%89%8b%e5%88%b7%e4%bb%a3%e5%b8%81%e5%b0%8f%e8%9c%9c%e8%9c%82v2%e7%89%88%e6%9c%ac%e5%85%8dairtest/)
