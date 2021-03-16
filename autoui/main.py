@@ -117,7 +117,8 @@ def play_game_ing():
     while True:
         find_click_pick_lol('pic/1费卡.png', '1费卡')
         find_click_pick_lol('pic/2费卡.png', '2费卡')
-        find_click_pick_lol('pic/3费卡.png', '3费卡')
+        find_click_pick_lol('pic/刷新牌.png', '刷新牌')
+        #find_click_pick_lol('pic/3费卡.png', '3费卡')
         if find_click_pick_lol('pic/游戏结束退出.png', '游戏退出'):
             print('游戏结束')
             break
