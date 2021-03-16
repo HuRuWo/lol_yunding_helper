@@ -1,3 +1,19 @@
+
+# 20210316更新
+
+# 发布一个exe版本 点击直接运行 无需设置任何环境
+
+点击下载
+
+[https://github.com/HuRuWo/lol_yunding_helper/tree/master/exe](https://github.com/HuRuWo/lol_yunding_helper/tree/master/exe)
+
+
+[https://github.com/HuRuWo/lol_yunding_helper/archive/v2.zip](https://github.com/HuRuWo/lol_yunding_helper/archive/v2.zip)
+
+
+
+----------------------------------------------
+
 # 20210315更新
 
 # v2版本的 现在已经更新了 不需要下载airtest
