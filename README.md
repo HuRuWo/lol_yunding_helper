@@ -1,4 +1,7 @@
 
+
+
+
 # 20210316更新
 
 # 发布一个exe版本 点击直接运行 无需设置任何环境
@@ -10,6 +13,9 @@
 
 [https://github.com/HuRuWo/lol_yunding_helper/archive/v2.zip](https://github.com/HuRuWo/lol_yunding_helper/archive/v2.zip)
 
+
+![效果预览](
+https://img-blog.csdnimg.cn/20210316163217961.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x3X3poYW9yaXRpYW4=,size_16,color_FFFFFF,t_70)
 
 
 ----------------------------------------------
