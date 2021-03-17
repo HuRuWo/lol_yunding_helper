@@ -8,10 +8,9 @@
 
 点击下载
 
-[https://github.com/HuRuWo/lol_yunding_helper/tree/master/exe](https://github.com/HuRuWo/lol_yunding_helper/tree/master/exe)
 
 
-[https://github.com/HuRuWo/lol_yunding_helper/archive/v2.zip](https://github.com/HuRuWo/lol_yunding_helper/archive/v2.zip)
+[直接下载即用 免环境 管理员启动main.exe](https://github.com/HuRuWo/lol_yunding_helper/releases/download/v2%E7%89%88%E6%9C%AC/v2.zip)
 
 
 ![效果预览](
