@@ -36,6 +36,7 @@ def wait_pic_load(pic_path, tag, max_wait):
 
 def pic_exits(pic_path, tag):
     try:
+        # ,confidence=0.5
         buttonx, buttony = pyautogui.locateCenterOnScreen(pic_path)
         if buttonx and buttony:
             print("找到" + tag + "图片坐标", buttonx, buttony)
@@ -56,11 +57,11 @@ def find_pic(pic_path, tag):
         return buttonx, buttony
     except Exception as e:
         # print(traceback.print_exc())
-        print("找到" + tag + "图片失败")
+        # print("找到" + tag + "图片失败")
         return None, None
 
 
-def find_pic_play(pic_path, tag, sleep=3, duration=0.1,is_right =False):
+def find_pic_play(pic_path, tag, sleep=3, duration=0.1, is_right=False):
     try:
         buttonx, buttony = find_pic(pic_path, tag)
         if buttonx and buttony:
@@ -104,47 +105,40 @@ def find_click_pick_lol(pic_path, tag):
 
 
 def open_lol_game():
+    find_pic_play('pic/突然的弹窗1.png', '突然的弹窗1_战斗学院金币')
     find_pic_play('pic/再玩一次.png', '再玩一次')
     find_pic_play('pic/首页play.png', '首页play')
-    find_pic_play('pic/玩家对战.png', '玩家对战')
     find_pic_play('pic/选择云顶游戏模式.png', '点开进入云顶模式')
     find_pic_play('pic/确认创建对局.png', '创建对局')
     find_pic_move_to('pic/移动鼠标_更改模式.png', '移动鼠标到其他位置')
     if find_pic_play('pic/确认寻找对局.png', '寻找对局') or find_pic_play('pic/确认寻找对局2.png', '寻找对局2'):
-        isfind, bx, by = wait_pic_load('pic/接受对局.png', '接受对局', 10)
+        isfind, bx, by = wait_pic_load('pic/接受对局.png', '接受对局', 60)
         if isfind:
             pyautogui.click(bx, by)
+
+
+
+
+def find_pic_list_play(list_pic, tag):
+    for pic in list_pic:
+        find_pic_play(pic, tag)
 
 
 def play_game_ing():
     index = 0
     while True:
-        #find_click_pick_lol('pic/1费卡.png', '1费卡')
-        #find_click_pick_lol('pic/2费卡.png', '2费卡')
-        #find_click_pick_lol('pic/刷新牌.png', '刷新牌')
-        #find_click_pick_lol('pic/3费卡.png', '3费卡')
-        find_click_pick_lol('pic/xinghong/卡牌.png','猩红牌1')
-        find_click_pick_lol('pic/xinghong/卡莉斯塔.png.png','猩红牌2')
-        find_click_pick_lol('pic/xinghong/吸血鬼.png','猩红牌3')
-        find_click_pick_lol('pic/xinghong/时光.png','猩红牌4')
-        find_click_pick_lol('pic/xinghong/派克.png','猩红牌5')
-        find_click_pick_lol('pic/xinghong/蜘蛛.png','猩红牌6')
-        find_click_pick_lol('pic/xinghong/西维尔.png','猩红牌7')
-        find_click_pick_lol('pic/xinghong/建模.png','猩红牌8')
+        find_click_pick_lol('pic/xinghong/猩红.png', '猩红牌1')
+        if index % 25 == 0:
+            find_click_pick_lol('pic/购买经验值.png', '购买经验值')  # 五回合买一次经验
 
-
-        #find_pic_play('pic/蓝色装备.png', '蓝色装备',is_right=True)
-
-
-        if index % 15 == 0:
-            find_click_pick_lol('pic/购买经验值.png', '购买经验值') #五回合买一次经验
-
+        if index % 30 == 0:
+            find_click_pick_lol('pic/刷新牌.png', '购买经验值')  # 五回合买一次经验
 
         if find_click_pick_lol('pic/游戏结束退出.png', '游戏退出'):
             print('游戏结束')
             break
         time.sleep(3)
-        index+=1
+        index += 1
 
 
 if __name__ == '__main__':
