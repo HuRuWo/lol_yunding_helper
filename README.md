@@ -1,6 +1,25 @@
-# 316更新
+# 20210320更新
 
-发布了一个exe版本 直接点开运行
+## 添加跳过战斗学院任务的弹窗
+## 优化逻辑 
+
+
+
+
+# 20210317更新
+
+# 设置为猩红整容 自动拿猩红牌 可以提高排名
+
+
+---------------------------------------
+
+# 20210316更新
+
+![效果预览](
+https://img-blog.csdnimg.cn/20210316163217961.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x3X3poYW9yaXRpYW4=,size_16,color_FFFFFF,t_70)
+
+
+----------------------------------------------
 
 # 20210315更新
 
