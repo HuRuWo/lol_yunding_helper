@@ -1,8 +1,13 @@
+# 20210405更新
+
+关于小蜜蜂的阶段已经完成 本人也是勉强挂到了100级。
+
+这个阶段也算完成，后面估计等明年的刷等级任务再出来更新版本。
+
 # 20210320更新
 
-## 添加跳过战斗学院任务的弹窗
-## 优化逻辑 
-
+1. 添加跳过战斗学院任务的弹窗
+2. 优化逻辑 
 
 
 
@@ -15,9 +20,7 @@
 
 # 20210316更新
 
-![效果预览](
-https://img-blog.csdnimg.cn/20210316163217961.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x3X3poYW9yaXRpYW4=,size_16,color_FFFFFF,t_70)
-
+测试效果稳定
 
 ----------------------------------------------
 
