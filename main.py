@@ -42,11 +42,11 @@ def play_game():
 
 ## 根据固定的图片判断当前处于什么环境
 def game_state():
-
+    pass
 
 
 if __name__ == '__main__':
-    print('请先将游戏界面切换到云顶准备进入界面[界面上有寻找对局]')
+    print('请先将游戏界面切换到云顶准备进入界面[界面上有寻找对局 选择狂暴模式]')
     print('记得先将游戏分辨率调节为1440x900的窗口化')
     time.sleep(5)
     while True:
